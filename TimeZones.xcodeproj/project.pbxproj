@@ -11,6 +11,11 @@
 		9EDB56F2252D50FC00EB68F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB56F1252D50FC00EB68F5 /* ContentView.swift */; };
 		9EDB56F4252D50FF00EB68F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EDB56F3252D50FF00EB68F5 /* Assets.xcassets */; };
 		9EDB56F7252D50FF00EB68F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EDB56F6252D50FF00EB68F5 /* Preview Assets.xcassets */; };
+		9EDB5700252D511500EB68F5 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB56FF252D511500EB68F5 /* Clock.swift */; };
+		9EDB5706252D515100EB68F5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB5705252D515100EB68F5 /* Card.swift */; };
+		9EDB570A252D516D00EB68F5 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB5709252D516D00EB68F5 /* Time.swift */; };
+		9EDB570D252D51A300EB68F5 /* Zone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB570C252D51A300EB68F5 /* Zone.swift */; };
+		9EDB5712252D53AD00EB68F5 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB5711252D53AD00EB68F5 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		9EDB56F3252D50FF00EB68F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EDB56F6252D50FF00EB68F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9EDB56F8252D50FF00EB68F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EDB56FF252D511500EB68F5 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		9EDB5705252D515100EB68F5 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		9EDB5709252D516D00EB68F5 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		9EDB570C252D51A300EB68F5 /* Zone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zone.swift; sourceTree = "<group>"; };
+		9EDB5711252D53AD00EB68F5 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,10 @@
 		9EDB56EE252D50FC00EB68F5 /* TimeZones */ = {
 			isa = PBXGroup;
 			children = (
+				9EDB5711252D53AD00EB68F5 /* Utils.swift */,
+				9EDB5704252D512D00EB68F5 /* ModelView */,
+				9EDB5703252D512100EB68F5 /* View */,
+				9EDB5702252D511A00EB68F5 /* Model */,
 				9EDB56EF252D50FC00EB68F5 /* TimeZonesApp.swift */,
 				9EDB56F1252D50FC00EB68F5 /* ContentView.swift */,
 				9EDB56F3252D50FF00EB68F5 /* Assets.xcassets */,
@@ -67,6 +81,31 @@
 				9EDB56F6252D50FF00EB68F5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9EDB5702252D511A00EB68F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EDB5709252D516D00EB68F5 /* Time.swift */,
+				9EDB570C252D51A300EB68F5 /* Zone.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9EDB5703252D512100EB68F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9EDB56FF252D511500EB68F5 /* Clock.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9EDB5704252D512D00EB68F5 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				9EDB5705252D515100EB68F5 /* Card.swift */,
+			);
+			path = ModelView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EDB5700252D511500EB68F5 /* Clock.swift in Sources */,
 				9EDB56F2252D50FC00EB68F5 /* ContentView.swift in Sources */,
+				9EDB570A252D516D00EB68F5 /* Time.swift in Sources */,
+				9EDB5712252D53AD00EB68F5 /* Utils.swift in Sources */,
+				9EDB570D252D51A300EB68F5 /* Zone.swift in Sources */,
 				9EDB56F0252D50FC00EB68F5 /* TimeZonesApp.swift in Sources */,
+				9EDB5706252D515100EB68F5 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@ import SwiftUI
 struct TimeZonesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(zones: getAllZonesTime())
         }
     }
 }
